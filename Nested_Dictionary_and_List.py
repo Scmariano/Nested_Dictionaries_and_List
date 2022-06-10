@@ -42,6 +42,6 @@ def iterateDictionary(some_list):
     
     for key, val in students.items():
         print(key, "-", val)
-iterateDictionary(some_list)
+iterateDictionary()
 #3. Get Values From a List of Dictionaries
 
