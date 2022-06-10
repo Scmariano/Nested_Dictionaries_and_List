@@ -29,7 +29,7 @@ print(sports_directory['soccer'])
 z [0] ['y']= 30 
 print(z)
 
-#2. Iterate Through a List of Dictionaries
+# 2. Iterate Through a List of Dictionaries
 
 students = [
     {'first_name':  'Michael', 'last_name' : 'Jordan'},
@@ -38,10 +38,39 @@ students = [
     {'first_name' : 'KB', 'last_name' : 'Tonel'}
 ]
 
-def iterateDictionary(some_list):
-    
-    for key, val in students.items():
-        print(key, "-", val)
-iterateDictionary()
-#3. Get Values From a List of Dictionaries
+def iterate_dictionary(some_list):
+    for i in range(0, len(some_list)):
+        output = ""
+        for key,val in some_list[i].items():
+            output += f" {key} - {val},"
+        print(output)
+iterate_dictionary(students)
 
+#3. Get Values From a List of Dictionaries
+# key = first_name, last_name
+# values = []
+
+def iterateDictionary2(key_name, some_list):
+    for i in some_list:
+        print(i[key_name])
+
+
+iterateDictionary2('first_name', students)
+iterateDictionary2('last_name', students)
+
+# 4. Iterate Through a Dictionary with List Values
+dojo = {
+    'Locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'Instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+#key = Locations and Intructors
+#values = []
+
+def printInfo(some_dict):
+    for key, val in dojo.items():
+        print( )
+        print(f"{len(val)} {key}")
+        
+        for i in range(len(val)):
+            print(val[i])
+printInfo(dojo)
