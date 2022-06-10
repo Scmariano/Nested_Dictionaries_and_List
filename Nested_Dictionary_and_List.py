@@ -62,15 +62,8 @@ students = [
 ]
 
 def iterateDictionary2(key_name, some_list):
-    # for i in some_list:
-    #     print(i[key_name])
-
-    for i in range (len(some_list)):
-        print(some_list[i][key_name])
-
-
-
-
+    for i in some_list:
+        print(i[key_name])
 
 iterateDictionary2('first_name', students)
 iterateDictionary2('last_name', students)
